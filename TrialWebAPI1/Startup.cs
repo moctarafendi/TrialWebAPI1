@@ -31,6 +31,7 @@ namespace TrialWebAPI1
 
             services.AddDbContext<PustakaDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("pustakaConnection")));
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

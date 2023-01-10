@@ -14,5 +14,6 @@ namespace TrialWebAPI1.Service
             
         }
         public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

@@ -15,5 +15,7 @@ namespace TrialWebAPI1.Entity
         public bool Status { get; set; }
         public string Gambar { get; set; }
         public bool isAvailable { get; set; }
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
     }
 }
