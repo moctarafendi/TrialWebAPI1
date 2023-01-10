@@ -14,5 +14,6 @@ namespace TrialWebAPI1.Entity
         public string Penerbit { get; set; }
         public bool Status { get; set; }
         public string Gambar { get; set; }
+        public bool isAvailable { get; set; }
     }
 }
