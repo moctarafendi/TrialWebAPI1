@@ -33,6 +33,10 @@ namespace TrialWebAPI1.Controllers
         public async Task<IActionResult> GetCategory(int id)
         {
             var result = await _categoryRepository.GetById(id);
+            if (result == null)
+            {
+                return NotFound();
+            }
             return new JsonResult(result);
         }
 
